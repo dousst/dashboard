@@ -1,0 +1,177 @@
+<!DOCTYPE html lang="fr">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ProductiV</title>
+        <link rel="stylesheet" href="/sass/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <!--LEFT SIDE MENU-->
+        <section id="sideMenu">
+          <h1 class="logo-name">ProductiV<i class="fas fa-check-double"></i></h1>
+            <nav>
+                <span class="individ">
+                    <a href="#" class ="active"><i class="fas fa-tachometer-alt"></i> Tableau de bord</a>
+                </span>
+                <a href="#"> <i class="fas fa-sticky-note"></i> Remarques</a>
+                <a href="#"> <i class="fas fa-tasks"></i> Projets</a>
+                <a href="#"> <i class="fas fa-users"></i> Les clients</a> 
+                <a href="#"> <i class="fas fa-chart-line"></i> Analytique</a>
+                <a href="#"> <i class="far fa-calendar-check"></i> Événements</a>
+                <a href="#"> <i class="far fa-bookmark"></i> Enregistrer</a>
+                <a href="#"> <i class="fas fa-user"></i> Compte</a>
+                <a href="#"> <i class="fas fa-history"></i> L'histoire</a>
+                <a href="#"> <i class="fas fa-trash-alt"></i> Poubelle</a>
+                <a href="#"> <i class="fas fa-cog"></i> Réglages</a>
+            </nav>
+        </section>
+
+        <header>
+            <div class="search-sec">
+              <a href="#">
+                <i class="fas fa-search"></i>
+              </a>
+                <input type="text" name="" value="" placeholder="Cherche ici">
+            </div><!--END OF SEARCH BAR-->
+
+            <div class="user-sec">
+                <a href="#" class="notification">
+                    <i class="fas fa-toggle-on"></i>
+                </a>
+
+                <a href="#" class="notification">
+                    <i class="fas fa-comments"></i><span class="circle">5</span>
+                </a>
+                <a href="#" class="notification">
+                <i class="fas fa-envelope"></i><span class="circle"></span>
+                </a>
+
+                <a href="#" class="notification">
+                    <i class="fas fa-bell"></i><span class="circle">3</span>
+                </a>
+                
+                <a href="#">
+                    <div class="user-img"></div>
+                </a>
+
+                <a href="#" class="notification">
+                    <i class="fas fa-ellipsis-v"></i>
+                </a>
+            </div>
+        </header>
+    
+    <!--Main Content-->
+    <section id="main_content_area">
+      
+        <h2 class="header__title"><i class="fas fa-tachometer-alt"></i> Tableau de bord</h2>
+        <h4 class="header__subtitle">Salut Anabelle! 
+            Bienvenue sur ProductiV, un outil en ligne pour les pigistes.
+          </h4>
+          <div class="wrapper">
+
+            <div class="cards">
+              
+                  <div class="card [ is-collapsed ]">
+                    <div class="card__inner [ js-expander ]">
+                      <p class="title"><i class="far fa-handshake"></i> clients récents</p>
+                      <ul class="list-edit">
+                        <li>Asus</li>
+                        <li>Nickelodeon</li>
+                        <li>Caribé</li>
+                        <li>Jen & Berry's</li>
+                        <li>A-Lounge</li>
+                      </ul>
+                      </div>
+                    <div class="card__expander">
+                      <i class="fa fa-close [ js-collapser ]"></i>
+                      Expander
+                    </div>
+                  </div>
+              
+                  <div class=" card [ is-collapsed ] ">
+                      <div class="card__inner [ js-expander ]">
+                       <canvas id="barChart" height="115" width="100"></canvas>
+                      </div>
+                    </div>
+              
+                    <div class=" card [ is-collapsed ] ">
+                        <div class="card__inner [ js-expander ]">
+                            <p style="font-size: 0.75rem; text-align:center">revenu total</p>
+                          <canvas id="doughnutChart" height="100" width="100"></canvas>
+                        </div>
+                      </div>
+                    <!--TABLE SECTION-->    
+                      <div class="table-responsive">
+                          <table class="table table-hover">
+                              <thead>
+                                <tr style="text-transform:uppercase; font-weight:700">
+                                  <th scope="col">id</th>
+                                  <th scope="col">entreprise</th>
+                                  <th scope="col">contact</th>
+                                  <th scope="col">notes rapides</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">01</th>
+                                  <td>Asus</td>
+                                  <td>Otto B.</td>
+                                  <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">02</th>
+                                  <td>Nickelodeon</td>
+                                  <td>Maxwell A.</td>
+                                  <td>Quisquam maxime ipsam nostrum quibusdam corrupti eius in sed dolorem, excepturi unde quo assumenda asperiores odit officia distinctio ex impedit tempora quas?</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">03</th>
+                                  <td>Caribé</td>
+                                  <td>Thornton T.</td>
+                                  <td>Harum nostrum amet neque necessitatibus atque ea pariatur illum dolorem libero? Est, facilis? Officia amet accusamus totam quia soluta? Maxime, incidunt explicabo!</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">04</th>
+                                  <td>Jen & Berry's</td>
+                                  <td>Marshall P.</td>
+                                  <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi unde quo assumenda asperiores odit officia distinctio ex impedit tempora quas?</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">05</th>
+                                  <td>A-Lounge</td>
+                                  <td>Anderson K.</td>
+                                  <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">06</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td colspan="2"></td>
+                                    <td></td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                      </div>
+              
+           
+        
+      </div> <!--end of wrapper-->
+    </div>        
+    </section>
+
+    <script src="js/cards.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+
+
+
+
+
+</html>
